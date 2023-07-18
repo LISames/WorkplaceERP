@@ -15,7 +15,7 @@ import java.util.List;
 
 public abstract class BasePage {
 
-    @FindBy(css = "ul.navbar-left")
+    @FindBy(css = "span.title-level-1")
     public List<WebElement> menuOptions;
 
     @FindBy(css = "div[class='loader-mask shown']")
