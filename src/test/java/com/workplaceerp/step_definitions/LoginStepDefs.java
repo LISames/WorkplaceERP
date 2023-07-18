@@ -1,10 +1,14 @@
 package com.workplaceerp.step_definitions;
 
+import com.workplaceerp.pages.BasePage;
 import com.workplaceerp.pages.LoginPage;
+import com.workplaceerp.utilities.BrowserUtils;
 import com.workplaceerp.utilities.ConfigurationReader;
 import io.cucumber.java.en.Given;
-public class LoginStepDefs {
+import org.openqa.selenium.WebElement;
 
+public class LoginStepDefs 
+{
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
@@ -42,7 +46,13 @@ public class LoginStepDefs {
     public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
       LoginPage loginPage=new LoginPage();
       loginPage.login(username,password);
+
+
+
     }
+
+
+
 
 
 
