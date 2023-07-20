@@ -20,8 +20,15 @@ public abstract class BasePage
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(css = "ul.navbar-left")
+    @FindBy(css = "div.navbar-collapse.collapse>ul>li")
     public List<WebElement> menuOptions;
+
+    @FindBy(xpath = "//span[contains(@class,'oe_topbar_name')]")
+    public WebElement name;
+
+
+
+
 //    @FindBy(css = "div[class='loader-mask shown']")
 //    @CacheLookup
 //    protected WebElement loaderMask;
@@ -98,3 +105,5 @@ public abstract class BasePage
 //    }
 
 }
+
+
