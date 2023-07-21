@@ -22,11 +22,22 @@ public class LoginPage {
     public WebElement submit;
 
 
-    public void login(String userNameStr, String passwordStr) {
-        email.sendKeys(userNameStr);
-        password.sendKeys(passwordStr);
-        submit.click();
-        // verification that we logged
+
+    @FindBy(xpath = "//span[@class='oe_topbar_name']")
+    public WebElement name;
+    @FindBy(xpath = "//p[@class='alert alert-danger']")
+    public WebElement errormessage;
+
+    @FindBy(xpath = "//input[@required='required']")
+    public WebElement message;
+
+
+
+    public void login(String email, String password){
+        this.email.sendKeys(email);
+        this.password.sendKeys(password);
+        this.submit.click();
     }
+
 
 }

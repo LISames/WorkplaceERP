@@ -10,14 +10,13 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports.html",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
-                "json:target/cucumber.json",
-
-
+                "json:target/cucumber.json"
         },
         features = "src/test/resources/features",
         glue = "com/workplaceerp/step_definitions",
+  
         dryRun = false,
-        tags = "@B29G9-240",
+        tags = "@Wip",
         publish = true //generating a report with public link
 )
 public class CukesRunner {}
