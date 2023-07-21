@@ -28,6 +28,7 @@ public abstract class BasePage
 
     @FindBy(linkText = "More")
     public WebElement moreLink;
+
 //    @FindBy(css = "div[class='loader-mask shown']")
 //    @CacheLookup
 //    protected WebElement loaderMask;
