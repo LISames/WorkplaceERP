@@ -20,15 +20,14 @@ public abstract class BasePage
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//ul[@class = 'nav navbar-nav navbar-left oe_application_menu_placeholder']//li")
+    @FindBy(css = "div.navbar-collapse.collapse>ul>li")
     public List<WebElement> menuOptions;
 
-  @FindBy(css = "li#menu_more_container>ul>li")
-   public List<WebElement> menuOptionsMore;
+    @FindBy (css = "li#menu_more_container>ul>li")
+    public List<WebElement> menuOptionsMore;
 
     @FindBy(linkText = "More")
     public WebElement moreLink;
-
 
 //    @FindBy(css = "div[class='loader-mask shown']")
 //    @CacheLookup
