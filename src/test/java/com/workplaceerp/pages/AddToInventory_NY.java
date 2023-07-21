@@ -50,6 +50,7 @@ public class AddToInventory_NY {
     @FindBy(xpath = "//div[@class='oe_kanban_details']//strong/span[.='Alienware Area 51-m']")
     public WebElement productToEdit;
 
+    //
 }
 
 

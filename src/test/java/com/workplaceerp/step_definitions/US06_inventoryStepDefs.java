@@ -91,4 +91,4 @@ public class US06_inventoryStepDefs extends BasePage  {
         Assert.assertEquals(addToInventoryNy.Product.getText(), editedName);
     }
 }
-
+//

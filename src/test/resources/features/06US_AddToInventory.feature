@@ -39,3 +39,4 @@ Feature: Default
 		      |Notebooks    |Notebooks   |
 		      |Tablet       |Tablet      |
 		      |Android      |Android     |
+
