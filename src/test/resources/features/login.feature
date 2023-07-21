@@ -19,7 +19,9 @@ Feature: Users should be able to login
 
     #login functionality using parameterization
   Scenario: Verify login with different user types
-    Given the user logged in with username as "posmanager155@info.com" and password as "posmanager"
+    Given the user logged in with username as "salesmanager18@info.com" and password as "salesmanager"
+
+
 
 
 
