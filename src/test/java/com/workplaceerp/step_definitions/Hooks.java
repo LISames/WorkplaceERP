@@ -52,11 +52,13 @@ public class Hooks {
 
     //@BeforeStep
     public void setupStep(){
+
         System.out.println("-----> @BeforeSTEP : Running before each step!");
     }
 
     //@AfterStep
     public void teardownStep(){
+
         System.out.println("-----> @AfterSTEP : Running after each step!");
     }
 
