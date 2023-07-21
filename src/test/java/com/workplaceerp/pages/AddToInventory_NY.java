@@ -40,7 +40,7 @@ public class AddToInventory_NY {
 
     @FindBy(xpath = "//input[@class='o_searchview_input']")
     public WebElement ProductSearchBox;
-//
+
 
 
 
@@ -50,7 +50,6 @@ public class AddToInventory_NY {
     @FindBy(xpath = "//div[@class='oe_kanban_details']//strong/span[.='Alienware Area 51-m']")
     public WebElement productToEdit;
 
-    ////img[@class='img img-responsive']
 }
 
 
